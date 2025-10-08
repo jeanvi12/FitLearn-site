@@ -7,7 +7,7 @@ https://github.com/user-attachments/assets/48d682aa-8081-4d4a-81b6-b0e3d82140f3
 
 
 ## 🚀 Acesse o Projeto
-https://fit-learn.vercel.app/
+https://fit-learn-site.vercel.app/
 
 ## 💡 Sobre o Projeto
 
