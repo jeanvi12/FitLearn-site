@@ -1,0 +1,356 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Krona+One&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+:root {
+    --branco-principal: #FFFFFF;
+    --cinza-secundario: #C0C0C0;
+    --cinza-textos: #F9F9F9;
+    --botao-azul: #167BF7;
+    --botao-azul-hover: #1167d1bb;
+    --cor-de-fundo: #00030C;
+    --fonte-principal: 'Inter', sans-serif;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    font-family: var(--fonte-principal);
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.principal {
+    background-image: url('./assets/Background.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    align-items: center;
+    text-align: center;
+}
+
+.container {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.container__caixa {
+    margin: 0 6em;
+}
+
+.container__titulo {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.container__imagem {
+    margin: 1em 0 2em 0;
+    width: 40%;
+}
+
+
+.container__botao {
+    background-color: var(--botao-azul);
+    color: var(--branco-principal);
+    border-radius: 8px;
+    padding: 1em;
+    display: block;
+    text-decoration: none;
+    margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-hover);
+    transition: 0.3s;
+}
+
+
+.botao_secundario {
+    background-color: transparent;
+    border: 1px solid var(--branco-principal);
+}
+
+.botao_secundario:hover {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco-principal);
+    transition: 0.3s;
+}
+
+.container__aviso {
+    color: var(--cinza-secundario);
+    font-size: 12px;
+}
+
+/* Seção Secundária(reutilização para 3 seções de codigo) */
+
+.secundario {
+    background-color: var(--cor-de-fundo);
+    align-items: center;
+    margin: 0 10em;
+}
+
+.secundario__imagem {
+    width: 80%;
+}
+
+.container__descricao {
+    padding: 2em;
+}
+
+.descricao__titulo {
+    font-size: 48px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    font-family: 'Inter', sans-serif;
+}
+
+.descricao__paragrafo {
+    font-size: 16px;
+    font-weight: 200;
+    color: var(--cinza-textos);
+    margin: 0.5em 0;
+}
+
+.botao__terciario {
+    display: inline-block;
+    margin-top: 1em;
+}
+
+.celular__imagem {
+    width: 65%;
+    margin-left: 4em;
+}
+
+/* Ultima Seção */
+.dispositivos {
+    text-align: center;
+}
+
+.dispositivos__titulo {
+    font-size: 45px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    font-family: 'Inter', sans-serif;
+}
+
+.dispositivos__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5em 0;
+}
+
+.lista__subtitulo {
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--branco-principal);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Footer*/
+.rodape {
+    text-align: center;
+    margin: 7em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    margin: 1em 0;
+    gap: 1em;
+}
+
+.lista__link {
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 300;
+    color: var(--branco-principal);
+    font-family: 'Inter', sans-serif;
+}
+
+.lista__link:hover {
+    color: #fe9250;
+}
+
+.lista__link:active {
+    color: #1b6372;
+}
+
+.rodape__texto {
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--cinza-secundario);
+    font-family: 'Inter', sans-serif;
+    margin: 1em 0;
+}
+
+/* --- Responsividade para tablets (até 1024px) --- */
+@media screen and (max-width: 1024px) {
+
+    .container__titulo,
+    .descricao__titulo,
+    .dispositivos__titulo {
+        font-size: 2em;
+    }
+
+    .container {
+        display: block;
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 2em 1em;
+    }
+
+    .container__caixa {
+        margin: 2em 1em;
+    }
+
+    .secundario {
+        margin: 2em 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .secundario__imagem,
+    .celular__imagem {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .container__descricao {
+        padding: 1em 0;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        align-items: center;
+        margin: 2em 0;
+        gap: 2em;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+}
+
+/* --- Responsividade para tablets (até 1024px) --- */
+@media screen and (max-width: 1024px) {
+
+    .container {
+        display: block;
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 2em 1em;
+        background-image: none;
+    }
+
+    .container__caixa {
+        margin: 2em 1em;
+    }
+
+    .container__titulo,
+    .descricao__titulo,
+    .dispositivos__titulo {
+        font-size: 2em;
+    }
+
+    .secundario {
+        margin: 2em 1em;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+        gap: 2em;
+    }
+
+    .secundario__imagem,
+    .celular__imagem {
+        width: 80%;
+        margin: 0 auto;
+    }
+
+    .container__descricao {
+        padding: 1em 0;
+    }
+
+    .dispositivos__lista {
+        flex-direction: column;
+        align-items: center;
+        margin: 2em 0;
+        gap: 2em;
+    }
+
+    .rodape__lista {
+        flex-direction: column;
+        align-items: center;
+        gap: 0.5em;
+    }
+}
+
+/* --- Responsividade para celulares (até 600px) --- */
+@media screen and (max-width: 600px) {
+    body {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 1em 0.5em;
+    }
+
+    .container__caixa {
+        margin: 1em 0.5em;
+    }
+
+    .container__titulo,
+    .descricao__titulo,
+    .dispositivos__titulo {
+        font-size: 1.3em;
+        line-height: 1.2;
+    }
+
+    .secundario {
+        flex-direction: column-reverse;
+        margin: 1em 0.5em;
+        gap: 1em;
+    }
+
+    .secundario__imagem,
+    .celular__imagem {
+        width: 70%;
+        margin: 0;
+    }
+
+    .container__descricao {
+        padding: 0.5em 0;
+    }
+
+    .dispositivos__lista {
+        margin: 1em 0;
+        gap: 1em;
+    }
+
+    .lista__subtitulo {
+        font-size: 1.1em;
+    }
+
+    .rodape {
+        margin: 3em 0.5em;
+    }
+
+    .rodape__lista {
+        gap: 0.2em;
+    }
+
+    .rodape__texto {
+        font-size: 12px;
+    }
+}
