@@ -51,4 +51,4 @@ Durante o desenvolvimento do FitLearn, pude aprofundar meus conhecimentos em:
 
   ---
 
-🚧 Projeto para fins educacionais, desenvolvido com ajuda da Alura💙
+🚧 Desenvolvido com ajuda da Alura💙
